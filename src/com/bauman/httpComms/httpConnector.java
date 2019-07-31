@@ -25,7 +25,7 @@ import javax.net.ssl.HttpsURLConnection;
 public class httpConnector {
 
 	//Enter your environment URL
-	private String environment =  "https://supportvaults-integration.veevavault.com";
+	private String environment =  "{enter your Vault URL}";
 	
 	//Initiate Strings for storing authentication token and API version URL
 	private String auth;
@@ -41,8 +41,8 @@ public class httpConnector {
 	public void vaultAuthGen() throws Exception {
 		
 		//Enter user information
-		String user = "admin.dan@supportvaults.com";
-		String pass = "V@ultAc355";
+		String user = "{enter your Vault username}";
+		String pass = "{enter your Vault password}";
 		
 		System.out.println("Starting Authentication");
 		
