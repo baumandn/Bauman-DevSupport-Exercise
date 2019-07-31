@@ -22,28 +22,28 @@ public class rateLimitBestPractices {
 		//Monitoring and Regulating API Request Rates demonstration 
 		for (int i=0; i<2000; i++) {
 			
-			callMaker.getVersions();
-			System.out.println("Loop #" + (i+1));
+			System.out.println("\nLoop #" + (i+1));
+			callMaker.getVersions();		
 		
 		}
 		
-		//Schedule 
+		//Scheduler initiated
 		ScheduledExecutorService stayAlive = callMaker.vaultAuthKeepAlive();
 		
-		//wait 30 mins
+		//Wait 30 mins
 		int thirtyMins = 1800;
 		Thread.sleep(thirtyMins*1000);
 		
-		//create object metadata file
+		//Make API request
 		callMaker.getVersions();
 		
-		//wait 30 mins
+		//Wait 30 mins
 		Thread.sleep(thirtyMins*1000);
 		
-		//create document field metadata file
+		//Make API request
 		callMaker.getVersions();
 		
-		//Stop vaultAuthKeepAlive process
+		//Stop scheduler process
 		callMaker.vaultStopKeepAlive(stayAlive);
 		
 		
