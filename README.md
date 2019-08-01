@@ -4,7 +4,7 @@
 This project demonstrates some best practices when developing programs to interact with a Vevea Vault environment using the API. To run this requires an IDE and API access to a Vault environment on General Release 19R2 or later.
 
 This contains example of:
-* Reducing Authentication Requests
+* Avoiding unnecessary authentication requests
 * Monitoring and regulating API request rates
 
 ## How to import
