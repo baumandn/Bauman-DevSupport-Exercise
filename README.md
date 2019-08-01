@@ -1,5 +1,5 @@
 # Best Practices when working with Vault API Rate Limits - BestPractices-with-RateLimits
-**Please see the [project wiki](https://github.com/baumandn/BestPractices-with-RateLimits/wiki) for detailed walkthroug**
+**Please see the [project wiki](https://github.com/baumandn/BestPractices-with-RateLimits/wiki) for detailed walkthrough**
 
 This project demonstrates some best practices when developing programs to interact with a Vevea Vault environment using the API. To run this requires an IDE and API access to a Vault environment on General Release 19R2 or later.
 
